@@ -7,6 +7,7 @@ namespace LibNutricion.db
 {
     public partial class Profesional
     {
+
         #region variables locales
         private int _dni;
         private string _matricula;
@@ -67,7 +68,6 @@ namespace LibNutricion.db
             get { return _esMedico; }
             set { _esMedico = value; }
         }
-		
 		
 		public bool EsNutricionista
         {

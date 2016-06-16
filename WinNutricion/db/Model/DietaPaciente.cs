@@ -82,6 +82,7 @@ namespace LibNutricion.db
             {
                 if (_dieta == null)
                 {
+                    _dieta = new Dieta();
                     _dieta.findbykey(this.CodigoDieta);
                 }
                 return _dieta;

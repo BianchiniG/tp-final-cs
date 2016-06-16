@@ -7,7 +7,7 @@ namespace LibNutricion.db
 {
     public partial class Profesional : CommonObj, IAccessDB<Profesional>, ITable
     {
-        private string[] _columns = { "dni","matricula","nombre","apellido","telefono","fecha_alta","es_mes","es_nutri"};
+        private string[] _columns = { "dni","matricula","nombre","apellido","telefono","fecha_alta","es_med","es_nutri"};
         public List<Profesional> findAll()
         {
             return this.findAll(null);
@@ -19,16 +19,23 @@ namespace LibNutricion.db
         public Profesional findbykey(params object[] key)
         {
             Profesional p = (Profesional)ManagerDB<Profesional>.findbyKey(key);
-            this.Nombre = p.Nombre;
-            this.Apellido = p.Apellido;
-            this.Domicilio = p.Domicilio;
-            this.Dni = p.Dni;
-            this.FechaAlta = p.FechaAlta;
-            this.Telefono = p.Telefono;
-            this.EsMedico= p.EsMedico;            
-            this.EsNutricionista= p.EsNutricionista;            
-            this.IsNew = false;
-            return this;          
+            if (p != null)
+            {
+                this.Nombre = p.Nombre;
+                this.Apellido = p.Apellido;
+                this.Domicilio = p.Domicilio;
+                this.Dni = p.Dni;
+                this.FechaAlta = p.FechaAlta;
+                this.Telefono = p.Telefono;
+                this.EsMedico = p.EsMedico;
+                this.EsNutricionista = p.EsNutricionista;
+                this.IsNew = false;
+                return this;
+            }
+            else
+            {
+                return null;
+            }     
         }
         public bool saveObj()
         {
@@ -51,11 +58,25 @@ namespace LibNutricion.db
             this._matricula = dr[_columns[1]].ToString().Trim();
             this._nombre = dr[_columns[2]].ToString().Trim();
 			this._apellido = dr[_columns[3]].ToString().Trim();
-            this._domicilio = dr[_columns[4]].ToString().Trim();
-            this._telefono = dr[_columns[5]].ToString().Trim();
-            this._fechaAlta = DateTime.Parse(dr[_columns[6]].ToString());
-            this._esMedico = Boolean.Parse(dr[_columns[7]].ToString());
-            this._esNutricionista = Boolean.Parse(dr[_columns[8]].ToString());
+            this._telefono = dr[_columns[4]].ToString().Trim();
+            if (dr[_columns[5]] != DBNull.Value)
+                this._fechaAlta = DateTime.Parse(dr[_columns[5]].ToString());
+            if (Int32.Parse(dr[_columns[6]].ToString()) == 0)
+            {
+                this._esMedico = false;
+            }
+            else
+            {
+                this._esMedico = true;
+            }
+            if (Int32.Parse(dr[_columns[6]].ToString()) == 0)
+            {
+                this._esNutricionista = false;
+            }
+            else
+            {
+                this._esNutricionista = true;
+            }
             this.IsNew = false;
         }
         public string[] columns

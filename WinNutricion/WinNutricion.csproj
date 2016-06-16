@@ -79,17 +79,119 @@
     <Compile Include="db\Model\PlatoPaciente.cs" />
     <Compile Include="db\Model\Profesional.cs" />
     <Compile Include="db\Utils.cs" />
+    <Compile Include="Formularios\AltaDietaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AltaDietaFrm.Designer.cs">
+      <DependentUpon>AltaDietaFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AltaDietaPacFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AltaDietaPacFrm.Designer.cs">
+      <DependentUpon>AltaDietaPacFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AltaIngrFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AltaIngrFrm.Designer.cs">
+      <DependentUpon>AltaIngrFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AltaPacFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AltaPacFrm.Designer.cs">
+      <DependentUpon>AltaPacFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AltaPacProfFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AltaPacProfFrm.Designer.cs">
+      <DependentUpon>AltaPacProfFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AltaPlatoDietaFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AltaPlatoDietaFrm.Designer.cs">
+      <DependentUpon>AltaPlatoDietaFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AltaPlatoFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AltaPlatoFrm.Designer.cs">
+      <DependentUpon>AltaPlatoFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AltaPlatoIngrFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AltaPlatoIngrFrm.Designer.cs">
+      <DependentUpon>AltaPlatoIngrFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\AltaProfFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AltaProfFrm.Designer.cs">
+      <DependentUpon>AltaProfFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\BuscaDniPacUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\BuscaDniPacUC.Designer.cs">
+      <DependentUpon>BuscaDniPacUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\BuscaDniProfUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\BuscaDniProfUC.Designer.cs">
+      <DependentUpon>BuscaDniProfUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\BuscaPacProfUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\BuscaPacProfUC.Designer.cs">
+      <DependentUpon>BuscaPacProfUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\BuscarTodosIngrUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\BuscarTodosIngrUC.Designer.cs">
+      <DependentUpon>BuscarTodosIngrUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\BuscarTodosPlatosUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\BuscarTodosPlatosUC.Designer.cs">
+      <DependentUpon>BuscarTodosPlatosUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\BuscaTodosDietaUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\BuscaTodosDietaUC.Designer.cs">
+      <DependentUpon>BuscaTodosDietaUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\BuscaTodosPac.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\BuscaTodosPac.Designer.cs">
+      <DependentUpon>BuscaTodosPac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\BuscaTodosProfUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Formularios\BuscaTodosProfUC.Designer.cs">
+      <DependentUpon>BuscaTodosProfUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\PacientesAMFrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\PacientesAMFrm.Designer.cs">
       <DependentUpon>PacientesAMFrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Formularios\PrincipalFrm.cs">
+    <Compile Include="Formularios\PpalFrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Formularios\PrincipalFrm.Designer.cs">
-      <DependentUpon>PrincipalFrm.cs</DependentUpon>
+    <Compile Include="Formularios\PpalFrm.Designer.cs">
+      <DependentUpon>PpalFrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\PacientesFrm.cs">
       <SubType>Form</SubType>
@@ -97,16 +199,76 @@
     <Compile Include="Formularios\PacientesFrm.Designer.cs">
       <DependentUpon>PacientesFrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\PrincipalFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\PrincipalFrm.Designer.cs">
+      <DependentUpon>PrincipalFrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\AltaDietaFrm.resx">
+      <DependentUpon>AltaDietaFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AltaDietaPacFrm.resx">
+      <DependentUpon>AltaDietaPacFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AltaIngrFrm.resx">
+      <DependentUpon>AltaIngrFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AltaPacFrm.resx">
+      <DependentUpon>AltaPacFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AltaPacProfFrm.resx">
+      <DependentUpon>AltaPacProfFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AltaPlatoDietaFrm.resx">
+      <DependentUpon>AltaPlatoDietaFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AltaPlatoFrm.resx">
+      <DependentUpon>AltaPlatoFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AltaPlatoIngrFrm.resx">
+      <DependentUpon>AltaPlatoIngrFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\AltaProfFrm.resx">
+      <DependentUpon>AltaProfFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\BuscaDniPacUC.resx">
+      <DependentUpon>BuscaDniPacUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\BuscaDniProfUC.resx">
+      <DependentUpon>BuscaDniProfUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\BuscaPacProfUC.resx">
+      <DependentUpon>BuscaPacProfUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\BuscarTodosIngrUC.resx">
+      <DependentUpon>BuscarTodosIngrUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\BuscarTodosPlatosUC.resx">
+      <DependentUpon>BuscarTodosPlatosUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\BuscaTodosDietaUC.resx">
+      <DependentUpon>BuscaTodosDietaUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\BuscaTodosPac.resx">
+      <DependentUpon>BuscaTodosPac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\BuscaTodosProfUC.resx">
+      <DependentUpon>BuscaTodosProfUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\PacientesAMFrm.resx">
       <DependentUpon>PacientesAMFrm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Formularios\PrincipalFrm.resx">
-      <DependentUpon>PrincipalFrm.cs</DependentUpon>
+    <EmbeddedResource Include="Formularios\PpalFrm.resx">
+      <DependentUpon>PpalFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\PacientesFrm.resx">
       <DependentUpon>PacientesFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\PrincipalFrm.resx">
+      <DependentUpon>PrincipalFrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -116,6 +278,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="App.Config" />
     <None Include="Properties\Settings.settings">
@@ -139,6 +302,11 @@
     <Content Include="references\Npgsql.pdb" />
     <Content Include="references\Npgsql.XML" />
     <Content Include="references\zh-CN\Npgsql.resources.dll" />
+    <None Include="Resources\team.png" />
+    <None Include="Resources\surgeon.png" />
+    <None Include="Resources\spaghetti.png" />
+    <None Include="Resources\paper.png" />
+    <None Include="Resources\harvest.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

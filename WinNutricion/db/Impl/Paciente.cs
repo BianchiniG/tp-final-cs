@@ -19,17 +19,24 @@ namespace LibNutricion.db
         public Paciente findbykey(params object[] key)
         {
             Paciente p = (Paciente)ManagerDB<Paciente>.findbyKey(key);
-            this.Nombre = p.Nombre;
-            this.Apellido = p.Apellido;
-            this.Domicilio = p.Domicilio;
-            this.Dni = p.Dni;
-            this.FechaAlta = p.FechaAlta;
-            this.FechaNac = p.FechaNac;
-            this.Telefono = p.Telefono;
-            this.PesoInicial = p.PesoInicial;
-            this.Talla = p.Talla;
-            this.IsNew = false;
-            return this;
+            if (p != null)
+            {
+                this.Nombre = p.Nombre;
+                this.Apellido = p.Apellido;
+                this.Domicilio = p.Domicilio;
+                this.Dni = p.Dni;
+                this.FechaAlta = p.FechaAlta;
+                this.FechaNac = p.FechaNac;
+                this.Telefono = p.Telefono;
+                this.PesoInicial = p.PesoInicial;
+                this.Talla = p.Talla;
+                this.IsNew = false;
+                return this;
+            }
+            else
+            {
+                return null;
+            }
         }
         public bool saveObj()
         {

@@ -98,7 +98,7 @@ namespace WinNutricion
         {
             this.gridData.DataSource = ManagerDB<PacienteProfesional>.findAll();
         }
-                
+
         private void SearchDniBtn_Click(object sender, EventArgs e)
         {
             Paciente p = new Paciente();

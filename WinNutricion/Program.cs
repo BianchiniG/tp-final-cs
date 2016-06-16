@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
+using WinNutricion.Formularios;
 
 namespace WinNutricion
 {
@@ -15,7 +16,7 @@ namespace WinNutricion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PrincipalFrm());
+            Application.Run(new PpalFrm());
         }
     }
 }

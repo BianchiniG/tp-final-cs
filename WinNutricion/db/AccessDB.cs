@@ -30,6 +30,7 @@ namespace LibNutricion.db
                 conn.ConnectionString = CadenaConexion;
                 conn.Open();
             }
+
             NpgsqlDataAdapter da = new NpgsqlDataAdapter(sql, conn);
             //Limpiar el dataset
             ds.Reset();
